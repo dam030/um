@@ -1,0 +1,58 @@
+body {
+    width: 100%;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.hide-text {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(0 0 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0;
+}
+
+.headercontainer {
+    height: 60px;
+}
+
+.headerbox {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.headersocar > img {
+    width: 112px;
+}
+
+.headermenu {
+    width: 36px;
+    height: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menubar {
+    width: 26px;
+    height: 3px;
+    background-color: white;
+}
+
+.mainarea {
+    width: 100%;
+}
+
+.mainimg {
+    top: 0;
+}

@@ -4,27 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>구성</title>
+    <link rel="stylesheet" href="구성.css">
+    <script src="구성.js"></script>
     <style>
         * {
             margin: 0;
             padding: 0;
             text-decoration: none;
+            font-size: 12px;
+            color: #222;
         }
+
+        img{
+            width: fit-content;
+            height: fit-content;
+        }
+
+        .hide-text {
+            position: absolute;
+            clip: rect(1px, 1px, 1px, 1px);
+            clip-path: inset(0 0 99.9% 99.9%);
+            overflow: hidden;
+            height: 1px;
+            width: 1px;
+            padding: 0;
+            border: 0;
+        }
+
+        .header-container{
+            width: 100%;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .my-login {
+            padding-right: 10px;
+        }
+
+        .mypage {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .cristal{
+            display: flex;
+            gap: 3px
+        }
+
+        .menu {
+            width: 100%;
+            height: 70px;
+            background-color: black;
+        }
+
+        .menu-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon-c {
+            width: 20px;
+        }
+        
+        .menu-contents {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .menu-contents > a {
+            font-size: 16px;
+            color: white;
+        }
+
+        .game-start {
+            display: block;
+        	background: url('img/btn_gamestart.png') no-repeat 0 0;
+        	width: 220px;
+        	height: 70px;
+        }
+
+        .slide-container {
+            width: 1920px;
+            height: 440px;
+        }
+
+        /* .contents {
+            background-color: aqua;
+        } */
     </style>
 </head>
 <body>
     <header class="header-container">
         <div class="header">
             <div class="logo-container">
-                <a href="" class="logo">FinalFantasy XIV</a>
+                <img src="img/top_logo.png" alt="">
+                <a href="" class="logo hide-text">FinalFantasy XIV</a>
             </div>
             <div class="my-login">
                 <ul class="mypage">
-                    <li href="" class="login">로그인</li>
-                    <li href="" class="new">회원가입</li>
+                    <a href="" class="login">
+                        <p class="mypage-p">로그인</p>
+                    </a>
+                    <a href="" class="new">
+                        <p class="mypage-p">회원가입</p>
+                    </a>
                     <div class="cristal">
-                        <img src="" alt="">
-                        <li class="cristal-page">크리스탈 충전</li>
+                        <img src="img/icon_shop2.png" alt="" class="icon-small-c">
+                        <a class="cristal-page">
+                            <p class="mypage-p">크리스탈 충전</p>
+                        </a>
                     </div>
                 </ul>
             </div>
@@ -50,33 +148,39 @@
                     <a href="">고객센터</a>
                 </div>
                 <div class="menu-contents">
-                    <img src="" alt="">
+                    <img src="img/icon_shop.png" alt="" class="icon-c">
                     <a href="">크리스탈샵</a>
                 </div>
                 <div class="menu-contents">
-                    <a href="">GAME START</a>
+                    <span class="game-start"></span>
+                    <a href="" class="hide-text" >GAME START</a>
                 </div>
             </div>
         </div>
     </header>
     <section>
         <div class="slide-container">
-            <div class="contents"></div>
-            <div class="contents"></div>
-            <div class="contents"></div>
-            <div class="contents"></div>
-            <div class="contents"></div>
-            <div class="contents"></div>
-            <div class="contents"></div>
-            <div class="contents"></div>
-            <div class="contents"></div>
-            <div class="contents"></div>
-            <div class="contents"></div>
-            <div class="contents"></div>
-            <div class="contents"></div>
-            <div class="contents"></div>
-            <div class="contents"></div>
+            <div class="contents" style="background-image: url(img/999911C83AF163E41842B719C3E5532C862DAA99AE7499A5705109E471F3A060.jpg);">1</div>
+            <div class="contents" style="background-image: url(img/4F6AA178608009DB63A8DC55CB477A27640495B108E002FF7EB16C5147190BDD.jpg);">2</div>
+            <div class="contents" style="background-image: url(img/1514CA25871C6A397F3E98B27D9BE3B6E8CC08E1860E5EC5198B18F4FCEBC1C6.jpg);">3</div>
+            <div class="contents" style="background-image: url(img/F60B1A95A1A79896FDEB683C2FD8C777C20FBA40BCD0C8222C397DA28FF607C8.jpg);">4</div>
+            <div class="contents" style="background-image: url(img/4C01602017B317197B44D66FE45AA7FF9D6B0A3B4424119D72C4FEC912345F5E.jpg);">5</div>
+            <div class="contents" style="background-image: url(img/911B93D171270699EE63F2833C6ED8DFC6BC1CD72C49C2ECCB512D463453C3F6.png);">6</div>
+            <div class="contents" style="background-image: url(img/D4714C8C88328C93672739CBEA0A4DF900A74FB790EFAADF7DE5B3FD91B532D1.jpg);">7</div>
+            <div class="contents" style="background-image: url(img/EE35C44194B617F3A7D1AF3CCE4D94CC64DB9E40C0B914EEF4DE34914E35ADEF.jpg);">8</div>
+            <div class="contents" style="background-image: url(img/B84FF9E678F4AB54DFC68E9CD0DE121EDCE6B719B25A039D35AF8E7F376CAE97.jpg);">9</div>
+            <div class="contents" style="background-image: url(img/AC184B4BA8A80EDBD37A2DA06972C17E569D823CD129C49ABF1CCE9CABB09D8A.jpg);">10</div>
+            <div class="contents" style="background-image: url(img/F2F4C481BEB3EB71B6F343E31EF02A0164764DAD1600990B4279D2F02E90BB5D.jpg);">11</div>
+            <div class="contents" style="background-image: url(img/4F6AA178608009DB63A8DC55CB477A27640495B108E002FF7EB16C5147190BDD.jpg);">12</div>
+            <div class="contents" style="background-image: url(img/4DC1657B6FD5D217CA0F3F3C35C592C32ACB2206168366962BD76A73C23AB662.jpg);">13</div>
+            <div class="contents" style="background-image: url(img/C1C91059BE31E48E520A2FFFECFBDEF7746E789D99DE060FA12F18659125F9EA.jpg);">14</div>
+            <div class="contents" style="background-image: url(img/BD712FE177B0C89EDD30EE230368F70C70281DD45F52943A58179001CF7E678A.jpg);">15</div>
         </div>
+
+        <script>
+            const myslider = document.querySelector('.slide-container');
+            createSlider(myslider, 1, 0, 300, true)
+        </script>
     </section>
 </body>
 </html>
